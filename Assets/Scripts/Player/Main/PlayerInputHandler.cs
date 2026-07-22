@@ -64,5 +64,20 @@ namespace PSEMO.Player
                 }
             }
         }
+
+        public void OnMove(InputAction.CallbackContext context)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OnUp(InputAction.CallbackContext context)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OnDash(InputAction.CallbackContext context)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

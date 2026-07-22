@@ -9,5 +9,8 @@ namespace PSEMO.Core.Persistence
         public Vector3 playerPosition;
         public Vector3 playerRespawnPosition;
         public bool ableToInteract;
+        public bool ableToMove;
+        public bool ableToJump;
+        public bool ableToDash;
     }
 }

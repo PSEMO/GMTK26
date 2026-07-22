@@ -4,6 +4,9 @@ namespace PSEMO.Player
 {
     public enum AbilityType
     {
-        Interact
+        Interact,
+        Move,
+        Jump,
+        Dash
     }
 }

@@ -15,12 +15,18 @@ namespace PSEMO.Player
 
         //Able To
         [HideInInspector] public bool ableToInteract;
+        [HideInInspector] public bool ableToMove;
+        [HideInInspector] public bool ableToJump;
+        [HideInInspector] public bool ableToDash;
 
         void Awake()
         {
             inputHandler = new PlayerInputHandler(this);
 
             ableToInteract = data.ableToInteract;
+            ableToMove = data.ableToMove;
+            ableToJump = data.ableToJump;
+            ableToDash = data.ableToDash;
         }
 
         void Start()
@@ -69,6 +75,15 @@ namespace PSEMO.Player
                 case AbilityType.Interact:
                     ableToInteract = true;
                     break;
+                case AbilityType.Move:
+                    ableToMove = true;
+                    break;
+                case AbilityType.Jump:
+                    ableToJump = true;
+                    break;
+                case AbilityType.Dash:
+                    ableToDash = true;
+                    break;
             }
         }
 
@@ -82,6 +97,9 @@ namespace PSEMO.Player
             transform.position = saveData.playerPosition;
             respawnPos = saveData.playerRespawnPosition;
             ableToInteract = saveData.ableToInteract;
+            ableToMove = saveData.ableToMove;
+            ableToJump = saveData.ableToJump;
+            ableToDash = saveData.ableToDash;
         }
 
         public string SaveData()
@@ -91,6 +109,9 @@ namespace PSEMO.Player
                 playerPosition = transform.position,
                 playerRespawnPosition = respawnPos,
                 ableToInteract = ableToInteract,
+                ableToMove = ableToMove,
+                ableToJump = ableToJump,
+                ableToDash = ableToDash
             };
             return JsonUtility.ToJson(data);
         }
