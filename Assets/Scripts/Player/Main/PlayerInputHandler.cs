@@ -67,17 +67,26 @@ namespace PSEMO.Player
 
         public void OnMove(InputAction.CallbackContext context)
         {
-            throw new System.NotImplementedException();
+            if (player.ableToMove)
+                player.MovementInput = context.ReadValue<Vector2>();
+            else
+                player.MovementInput = Vector2.zero;
         }
 
         public void OnUp(InputAction.CallbackContext context)
         {
-            throw new System.NotImplementedException();
+            if (context.started && player.ableToJump)
+                player.JumpInput = true;
+            else if (context.canceled)
+                player.JumpInput = false;
         }
 
         public void OnDash(InputAction.CallbackContext context)
         {
-            throw new System.NotImplementedException();
+            if (context.started && player.ableToDash)
+                player.DashInput = true;
+            else if (context.canceled)
+                player.DashInput = false;
         }
     }
 }

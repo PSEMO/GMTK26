@@ -20,6 +20,20 @@ namespace PSEMO.Player
         public int maxJumpCount = 1;
         public float jumpBuffer = 0.16f;
         public float coyoteJump = 0.16f;
+        
+        [Header("Config")]
+        public float groundCheckDistance = 0.02f;
+        public LayerMask groundLayer = 1152;
+        
+        [Space]
+
+        [Header("Dash")]
+        public float dashForce = 40f;
+        public float dashDuration = 0.12f;
+
+        [Header("Config")]
+        public float wallCheckDistance = 0.2f;
+        public LayerMask wallLayer = 128;
 
         [Space]
 

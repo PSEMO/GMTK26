@@ -13,6 +13,11 @@ namespace PSEMO.Player
 
         [HideInInspector] public Vector3 respawnPos;
 
+        //Input
+        [HideInInspector] public Vector2 MovementInput;
+        [HideInInspector] public bool JumpInput;
+        [HideInInspector] public bool DashInput;
+
         //Able To
         [HideInInspector] public bool ableToInteract;
         [HideInInspector] public bool ableToMove;
