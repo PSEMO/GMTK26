@@ -6,7 +6,7 @@ namespace PSEMO.Camera
     public class CameraSO : ScriptableObject
     {
         [Header("Follow Settings")]
-        public Vector3 offset = Vector3.zero;
+        public Vector3 positionOffset = Vector3.zero;
         public float distanceToTarget = 0;
         public Vector3 rotationOffset = Vector3.zero;
         public float smoothTime = 0.25f;

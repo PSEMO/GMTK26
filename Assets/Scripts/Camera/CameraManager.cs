@@ -6,18 +6,19 @@ namespace PSEMO.Camera
 {
     public class CameraManager : MonoBehaviour
     {
-
         [SerializeField] CameraSO data;
 
         private Dictionary<Transform, float> targets;
         private Vector3 velocity = Vector3.zero;
-        private Vector3 angularVelocity = Vector3.zero;
-        private Vector3 targetPos = Vector3.zero;
-        private Vector3 direction = Vector3.back;
-        
+
         private void Awake()
         {
             targets = new Dictionary<Transform, float>();
+        }
+
+        void Start()
+        {
+            transform.SetPositionAndRotation(GetTargetPos(), Quaternion.Euler(data.rotationOffset));
         }
 
         private void OnEnable()
@@ -36,22 +37,10 @@ namespace PSEMO.Camera
 
         void LateUpdate()
         {
-            Vector3 lastTargetPosition = targetPos;
-            targetPos = GetTargetPos();
-
-            Vector3 tempDirection = targetPos - lastTargetPosition;
-            tempDirection.y = 0;
-            direction = tempDirection.sqrMagnitude < 0.001f ? direction : tempDirection.normalized;
-
-            Vector3 offsettedPos = targetPos + data.offset + (-direction * data.distanceToTarget);
-
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            Quaternion offsettedRotation = targetRotation * Quaternion.Euler(data.rotationOffset);
-
-            MoveAndRotateTowardsTheTarget(offsettedPos, offsettedRotation);
+            MoveTowardsTarget(GetTargetPos() + data.positionOffset);
         }
 
-        private void MoveAndRotateTowardsTheTarget(Vector3 targetPos, Quaternion direction)
+        private void MoveTowardsTarget(Vector3 targetPos)
         {
             Vector3 newPos = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, data.smoothTime, data.maxSpeed);
 
@@ -63,15 +52,6 @@ namespace PSEMO.Camera
             }
 
             transform.position = newPos;
-
-            Vector3 currentEuler = transform.rotation.eulerAngles;
-            Vector3 targetEuler = direction.eulerAngles;
-
-            float x = Mathf.SmoothDampAngle(currentEuler.x, targetEuler.x, ref angularVelocity.x, data.smoothTime, data.maxSpeed);
-            float y = Mathf.SmoothDampAngle(currentEuler.y, targetEuler.y, ref angularVelocity.y, data.smoothTime, data.maxSpeed);
-            float z = Mathf.SmoothDampAngle(currentEuler.z, targetEuler.z, ref angularVelocity.z, data.smoothTime, data.maxSpeed);
-
-            transform.rotation = Quaternion.Euler(x, y, z);
         }
 
         private Vector3 GetTargetPos()
@@ -109,8 +89,7 @@ namespace PSEMO.Camera
         private void ResetToTarget()
         {
             velocity = Vector3.zero;
-            angularVelocity = Vector3.zero;
-            transform.position = GetTargetPos();
+            transform.SetPositionAndRotation(GetTargetPos(), Quaternion.Euler(data.rotationOffset));
         }
     }
 }
