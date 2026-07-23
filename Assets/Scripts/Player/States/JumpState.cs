@@ -14,7 +14,9 @@ namespace PSEMO.Player
             
             //AudioManager.Instance.PlayAudio(AudioConstants.Jump);
         
-            ctx.rb.linearVelocity = new Vector3(ctx.rb.linearVelocity.x, ctx.data.jumpForce, ctx.rb.linearVelocity.z);
+            float gravitySign = Mathf.Sign(Physics.gravity.y);
+            float jumpVelocity = gravitySign < 0 ? ctx.data.jumpForce : -ctx.data.jumpForce;
+            ctx.rb.linearVelocity = new Vector3(ctx.rb.linearVelocity.x, jumpVelocity, ctx.rb.linearVelocity.z);
             ctx.jumpBufferCounter = 0f;
             ctx.coyoteTimeCounter = 0f;
             ctx.jumpsLeft--;

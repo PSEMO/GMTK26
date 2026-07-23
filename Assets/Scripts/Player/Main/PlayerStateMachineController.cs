@@ -40,7 +40,10 @@ namespace PSEMO.Player
 
             Any(dashState, () => player.DashInput && player.canDash);
 
-            Any(fallState, () => player.rb.linearVelocity.y < -0.1f);
+            Any(fallState, () => {
+                float gravitySign = Mathf.Sign(Physics.gravity.y);
+                return gravitySign < 0 ? player.rb.linearVelocity.y < -0.1f : player.rb.linearVelocity.y > 0.1f;
+            });
 
             stateMachine.SetState(idleState);
         }

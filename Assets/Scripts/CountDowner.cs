@@ -28,7 +28,7 @@ public class CountDowner : MonoBehaviour
             currentUpState = !currentUpState;
             timer += maxTimer;
 
-            CountdownEvent.InvokeOnCountDown(initialUpState);
+            CountdownEvent.InvokeOnCountDown(currentUpState);
         }
 
         txt.text = timer.ToString("F1");

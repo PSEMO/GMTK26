@@ -113,7 +113,9 @@ namespace PSEMO.Player
             if (isGrounded)
             {
                 coyoteTimeCounter = data.coyoteJump;
-                if (rb.linearVelocity.y <= 0.1f)
+                float gravitySign = Mathf.Sign(Physics.gravity.y);
+                bool isFalling = gravitySign < 0 ? rb.linearVelocity.y <= 0.1f : rb.linearVelocity.y >= -0.1f;
+                if (isFalling)
                 {
                     hasJumped = false;
                     jumpsLeft = maxJumpCount;

@@ -27,7 +27,8 @@ namespace PSEMO.Player
 
         public bool IsOnGround(Vector3 center)
         {
-            center.y += -groundCheckDistance;
+            float gravitySign = Mathf.Sign(Physics.gravity.y);
+            center.y += gravitySign * groundCheckDistance;
 
             return Physics.CheckBox(center, groundCheckBoxSize / 2f, Quaternion.identity, groundLayer);
         }
