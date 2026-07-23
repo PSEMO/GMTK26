@@ -68,9 +68,9 @@ namespace PSEMO.Player
         public void OnMove(InputAction.CallbackContext context)
         {
             if (player.ableToMove)
-                player.MovementInput = context.ReadValue<Vector2>();
+                player.MovementInput = context.ReadValue<float>();
             else
-                player.MovementInput = Vector2.zero;
+                player.MovementInput = 0f;
         }
 
         public void OnUp(InputAction.CallbackContext context)

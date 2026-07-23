@@ -14,27 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSO
   camWeight: 1
   speed: 8
-  maxJumpCount: 3
   jumpForce: 14
-  variableJump: 1
-  variableJumpMult: 0
-  dashForce: 40
-  dashDuration: 0.12
-  ableToRun: 1
-  ableToJump: 1
-  ableToDash: 1
-  ableToInteract: 1
-  coyoteTime: 0.08
-  jumpBufferTime: 0.12
-  groundCheckDistance: 0.02
+  maxJumpCount: 1
+  jumpBuffer: 0.16
+  coyoteJump: 0.16
+  groundCheckDistance: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 1152
+  dashForce: 40
+  dashDuration: 0.12
   wallCheckDistance: 0.2
   wallLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 1024
   interactionRadius: 4
   interactionLayer:
     serializedVersion: 2
     m_Bits: 64
+  ableToInteract: 1
+  ableToMove: 1
+  ableToJump: 1
+  ableToDash: 1
