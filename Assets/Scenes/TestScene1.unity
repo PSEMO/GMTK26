@@ -1479,6 +1479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GraityChanger
       objectReference: {fileID: 0}
+    - target: {fileID: 6266667418073781398, guid: e85b5caac72b012cf944169ca9ba0d25, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1492,6 +1496,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1885397948066067737, guid: 8f7dd234b04215e089ec0ba7fba2944b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7741476016541829853, guid: 8f7dd234b04215e089ec0ba7fba2944b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

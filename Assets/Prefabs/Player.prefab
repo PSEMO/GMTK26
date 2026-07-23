@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 1565698321691134389}
   - component: {fileID: 2018240993954701890}
   - component: {fileID: 8742660120965922276}
+  - component: {fileID: 1885397948066067737}
   - component: {fileID: 2026994788161240476}
   - component: {fileID: 849144670023489131}
   - component: {fileID: 2444809528620775254}
@@ -278,6 +279,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8584662c1c3dd8eddb9ea7df018d8e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VelocityOffsetReceiver
+--- !u!114 &1885397948066067737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202858013134004778}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1903cd65ce780f8a2a6ec196de699a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RespawnWCountDown
 --- !u!54 &2026994788161240476
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -168,6 +168,7 @@ namespace PSEMO.Player
         public void Respawn()
         {
             transform.position = respawnPos;
+            rb.position = respawnPos;
             rb.linearVelocity = Vector3.zero;
 
             MovementInput = 0f;
@@ -178,8 +179,6 @@ namespace PSEMO.Player
 
             jumpBufferCounter = 0f;
             coyoteTimeCounter = 0f;
-        
-            stateController.SetState(new IdleState(this, animator)); 
         }
 
         private void SetRespawnPos(Vector3 pos) => respawnPos = pos;
