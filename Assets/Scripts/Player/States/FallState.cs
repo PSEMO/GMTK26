@@ -13,14 +13,6 @@ namespace PSEMO.Player
             //animator.Play(FallAnimHash);
         }
 
-        public override void Update()
-        {
-            if (ctx.coyoteTimeCounter <= 0f && ctx.jumpsLeft == ctx.data.maxJumpCount)
-            {
-                ctx.jumpsLeft--;
-            }
-        }
-
         public override void FixedUpdate()
         {
             ctx.Run();

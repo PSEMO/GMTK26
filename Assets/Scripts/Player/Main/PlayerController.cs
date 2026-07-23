@@ -99,7 +99,7 @@ namespace PSEMO.Player
         {
             isGrounded = surfaceDetector.IsOnGround(col.bounds.center);
             UpdateTimers();
-
+            
             stateController.Update();
         }
 
@@ -171,6 +171,11 @@ namespace PSEMO.Player
             MovementInput = 0f;
             DashInput = false;
             JumpInput = false;
+
+            jumpsLeft = maxJumpCount;
+
+            jumpBufferCounter = 0f;
+            coyoteTimeCounter = 0f;
         
             stateController.SetState(new IdleState(this, animator)); 
         }
