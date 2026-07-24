@@ -1874,13 +1874,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCam
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5662047847214701983, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      insertIndex: -1
+      insertIndex: 6
       addedObject: {fileID: 525623798}
   m_SourcePrefab: {fileID: 100100000, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
 --- !u!1001 &4982742481455650518

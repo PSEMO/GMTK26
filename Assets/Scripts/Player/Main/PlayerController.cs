@@ -98,6 +98,7 @@ namespace PSEMO.Player
         void Update()
         {
             isGrounded = surfaceDetector.IsOnGround(col.bounds.center);
+            PlayerEvents.IsPlayerGrounded = isGrounded;
             UpdateTimers();
             
             stateController.Update();
