@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 5512355112433709631}
   - component: {fileID: 8461458975260659275}
   - component: {fileID: 4183461321243367269}
+  - component: {fileID: 1896898407827821481}
   m_Layer: 9
   m_Name: NoOpObstacle
   m_TagString: Untagged
@@ -157,3 +158,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1896898407827821481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8956165009913595517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493fc277428a6e939af216c1adaae353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CountDownPauser
+  isUpMeansActive: 1

@@ -4,8 +4,33 @@ using PSEMO.Environment.Functionality;
 namespace PSEMO.Environment.Movement
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class Faller : MonoBehaviour, IMover, IPoolable
+    public class Faller : MonoBehaviour, IMover, IPoolable, IPausable
     {
+        private bool isPaused = false;
+        private Vector3 storedVelocity;
+        private bool wasGravityEnabled;
+
+        public void Pause()
+        {
+            isPaused = true;
+            if (rb != null)
+            {
+                storedVelocity = rb.linearVelocity;
+                rb.linearVelocity = Vector3.zero;
+                wasGravityEnabled = rb.useGravity;
+                rb.useGravity = false;
+            }
+        }
+        public void Continue()
+        {
+            isPaused = false;
+            if (rb != null)
+            {
+                rb.linearVelocity = storedVelocity;
+                rb.useGravity = wasGravityEnabled;
+            }
+        }
+
         [SerializeField] private float maxSpeed = 20f;
         [SerializeField] private float gravity = 9.8f;
     
@@ -21,6 +46,8 @@ namespace PSEMO.Environment.Movement
 
         void FixedUpdate()
         {
+            if (isPaused) return;
+
             if (currentSpeed >= maxSpeed)
             {
                 directionalSpeed = Vector3.down * maxSpeed;
@@ -40,6 +67,7 @@ namespace PSEMO.Environment.Movement
 
         public void ResetObject()
         {
+            Continue();
             currentSpeed = 0f;
             directionalSpeed = Vector3.zero;
             rb.linearVelocity = Vector3.zero;

@@ -6,8 +6,33 @@ using PSEMO.Core.Persistence;
 namespace PSEMO.Environment.Movement
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class PathFollower : MonoBehaviour, IMover, IPoolable, IPersistable
+    public class PathFollower : MonoBehaviour, IMover, IPoolable, IPersistable, IPausable
     {
+        private bool isPaused = false;
+        private Vector3 storedVelocity;
+        private bool wasGravityEnabled;
+
+        public void Pause()
+        {
+            isPaused = true;
+            if (rb != null)
+            {
+                storedVelocity = rb.linearVelocity;
+                rb.linearVelocity = Vector3.zero;
+                wasGravityEnabled = rb.useGravity;
+                rb.useGravity = false;
+            }
+        }
+        public void Continue()
+        {
+            isPaused = false;
+            if (rb != null)
+            {
+                rb.linearVelocity = storedVelocity;
+                rb.useGravity = wasGravityEnabled;
+            }
+        }
+
         [SerializeField] private float speed = 5f;
         [SerializeField] private float distanceToleranceSqr = 0.01f;
 
@@ -43,6 +68,8 @@ namespace PSEMO.Environment.Movement
 
         private void Update()
         {
+            if (isPaused) return;
+
             if (Vector3.SqrMagnitude(transform.position - targetPos) <= distanceToleranceSqr)
             {
                 currentWaypointIndex = (currentWaypointIndex + 1) % targetPositions.Count;
@@ -52,6 +79,8 @@ namespace PSEMO.Environment.Movement
 
         void FixedUpdate()
         {
+            if (isPaused) return;
+
             directionalSpeed = speed * (targetPos - transform.position).normalized;
             rb.linearVelocity = directionalSpeed;
         }

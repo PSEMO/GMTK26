@@ -4,8 +4,33 @@ using PSEMO.Environment.Functionality;
 namespace PSEMO.Environment.Movement
 {
     [RequireComponent(typeof(IMover), typeof(Rigidbody))]
-    public class RotateTowardsDirection : MonoBehaviour, IPoolable
+    public class RotateTowardsDirection : MonoBehaviour, IPoolable, IPausable
     {
+        private bool isPaused = false;
+        private Vector3 storedAngularVelocity;
+        private bool wasGravityEnabled;
+
+        public void Pause()
+        {
+            isPaused = true;
+            if (rb != null)
+            {
+                storedAngularVelocity = rb.angularVelocity;
+                rb.angularVelocity = Vector3.zero;
+                wasGravityEnabled = rb.useGravity;
+                rb.useGravity = false;
+            }
+        }
+        public void Continue()
+        {
+            isPaused = false;
+            if (rb != null)
+            {
+                rb.angularVelocity = storedAngularVelocity;
+                rb.useGravity = wasGravityEnabled;
+            }
+        }
+
         private IMover mover;
 
         [SerializeField] private float rotationSpeed = 5f;
@@ -31,11 +56,13 @@ namespace PSEMO.Environment.Movement
 
         private void Update()
         {
+            if (isPaused) return;
             Rotate(Time.deltaTime);
         }
 
         private void FixedUpdate()
         {
+            if (isPaused) return;
             Rotate(Time.fixedDeltaTime);
         }
 

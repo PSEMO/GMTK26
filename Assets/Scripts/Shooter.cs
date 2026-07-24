@@ -1,8 +1,12 @@
 using UnityEngine;
 using PSEMO.Core.Management;
 
-public class Shooter : MonoBehaviour
+public class Shooter : MonoBehaviour, IPausable
 {
+    private bool isPaused = false;
+    public void Pause() => isPaused = true;
+    public void Continue() => isPaused = false;
+
     [SerializeField] GameObject projectile;
 
     [SerializeField] Transform barrelStart;
@@ -16,6 +20,8 @@ public class Shooter : MonoBehaviour
 
     void Update()
     {
+        if (isPaused) return;
+
         timer += Time.deltaTime;
 
         if (timer > timeBetweenShoot)

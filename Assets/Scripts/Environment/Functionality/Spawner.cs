@@ -3,8 +3,12 @@ using PSEMO.Core.Management;
 
 namespace PSEMO.Environment.Functionality
 {
-    public class Spawner : MonoBehaviour
+    public class Spawner : MonoBehaviour, IPausable
     {
+        private bool isPaused = false;
+        public void Pause() => isPaused = true;
+        public void Continue() => isPaused = false;
+
         [Tooltip("Time in seconds between each spawn.")]
         [SerializeField] private  float SpawnInterval = 2f;
     
@@ -23,6 +27,8 @@ namespace PSEMO.Environment.Functionality
 
         private void Update()
         {
+            if (isPaused) return;
+
             timer -= Time.deltaTime;
 
             if (timer <= 0f)

@@ -4,8 +4,33 @@ using PSEMO.Core.Persistence;
 
 namespace PSEMO.Environment.Movement
 {
-    public class Rotater : MonoBehaviour, IPoolable, IPersistable
+    public class Rotater : MonoBehaviour, IPoolable, IPersistable, IPausable
     {
+        private bool isPaused = false;
+        private Vector3 storedAngularVelocity;
+        private bool wasGravityEnabled;
+
+        public void Pause()
+        {
+            isPaused = true;
+            if (rb != null)
+            {
+                storedAngularVelocity = rb.angularVelocity;
+                rb.angularVelocity = Vector3.zero;
+                wasGravityEnabled = rb.useGravity;
+                rb.useGravity = false;
+            }
+        }
+        public void Continue()
+        {
+            isPaused = false;
+            if (rb != null)
+            {
+                rb.angularVelocity = storedAngularVelocity;
+                rb.useGravity = wasGravityEnabled;
+            }
+        }
+
         [SerializeField] private float rotationSpeed = 90f;
         [SerializeField] private Vector3 rotationAxis = Vector3.forward;
         [SerializeField] private bool unscaledTime = false;
@@ -27,6 +52,7 @@ namespace PSEMO.Environment.Movement
 
         private void Update()
         {
+            if (isPaused) return;
             if (rb != null) return;
 
             if (useGlobalTime)
@@ -49,6 +75,7 @@ namespace PSEMO.Environment.Movement
 
         private void FixedUpdate()
         {
+            if (isPaused) return;
             if (rb == null) return;
 
             if (useGlobalTime)

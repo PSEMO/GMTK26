@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1842267793083008393}
   - component: {fileID: 7780376921392621773}
   - component: {fileID: 6864143466128320215}
+  - component: {fileID: 3623621987230419870}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -62,3 +63,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PSEMO.GizmosAsAComp.ShowInGizmos
   label: Hazard Spawner
   circleRadius: 0.15
+--- !u!114 &3623621987230419870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713626933909202907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493fc277428a6e939af216c1adaae353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CountDownPauser
+  isUpMeansActive: 1

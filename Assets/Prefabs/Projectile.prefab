@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 650237903708986285}
   - component: {fileID: -1996711633448809094}
   - component: {fileID: 3577184470248686426}
+  - component: {fileID: 1854804808877214394}
   m_Layer: 9
   m_Name: Projectile
   m_TagString: Untagged
@@ -166,3 +167,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PSEMO.Environment.Functionality.Pooler
   groupName: projectile
+--- !u!114 &1854804808877214394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7611808494837164654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493fc277428a6e939af216c1adaae353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CountDownPauser
+  isUpMeansActive: 1
