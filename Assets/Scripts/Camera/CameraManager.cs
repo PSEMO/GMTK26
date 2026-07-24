@@ -11,6 +11,9 @@ namespace PSEMO.Camera
         private Dictionary<Transform, float> targets;
         private Vector3 velocity = Vector3.zero;
 
+        private float targetY;
+        private bool hasInitializedTargetY = false;
+
         private void Awake()
         {
             targets = new Dictionary<Transform, float>();
@@ -70,7 +73,17 @@ namespace PSEMO.Camera
 
                 endPosition /= totalWeight;
 
-                return new Vector3 (endPosition.x, endPosition.y, endPosition.z);
+                if (!hasInitializedTargetY)
+                {
+                    targetY = endPosition.y;
+                    hasInitializedTargetY = true;
+                }
+                else if (PlayerEvents.IsPlayerGrounded)
+                {
+                    targetY = endPosition.y;
+                }
+
+                return new Vector3 (endPosition.x, targetY, endPosition.z);
             }
 
             return transform.position;
@@ -89,6 +102,7 @@ namespace PSEMO.Camera
         private void ResetToTarget()
         {
             velocity = Vector3.zero;
+            hasInitializedTargetY = false;
             transform.SetPositionAndRotation(GetTargetPos(), Quaternion.Euler(data.rotationOffset));
         }
     }

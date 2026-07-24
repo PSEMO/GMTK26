@@ -5,6 +5,8 @@ namespace PSEMO.Events
 {
     public static class PlayerEvents
     {
+        public static bool IsPlayerGrounded;
+
         public static event Action OnPlayerDeath;
         public static void InvokePlayerDeath() => OnPlayerDeath?.Invoke();
 
