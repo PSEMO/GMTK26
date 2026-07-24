@@ -13,8 +13,5 @@ physic 3d için de matrix'i ayarla
 Surveillance camera
 Camera which has a detection cone. If the player character gets caught in it, they get shot to death.
 
-Mechanical failure
-Obstacles temporarily stop working, until the countdown reaches zero again.
-
 Rising toxic substance
 A deadly toxic substance rises, covering 70% of the screen size and limiting player movement.
