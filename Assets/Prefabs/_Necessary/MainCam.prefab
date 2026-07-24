@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7186925722832223349}
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: f0c70b5d980ed8ac69294c71956c8a9b, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 0.33333334}
+  m_Sprite: {fileID: 21300000, guid: 2013d8c4466c417b5b790c5011a93466, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -152,7 +152,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7186925722832223349}
@@ -206,8 +206,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: f0c70b5d980ed8ac69294c71956c8a9b, type: 3}
-  m_Color: {r: 0, g: 0, b: 1, a: 0.33333334}
+  m_Sprite: {fileID: 21300000, guid: af2b363441b75525493392352b8b0c92, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -227,10 +227,10 @@ GameObject:
   - component: {fileID: 2743190618378286413}
   - component: {fileID: 4433558062769191103}
   - component: {fileID: 9220819521073134142}
+  - component: {fileID: 1494500686113831007}
   - component: {fileID: 345434361929669659}
   - component: {fileID: 1099943886626747412}
   - component: {fileID: -7551380509072173656}
-  - component: {fileID: 1494500686113831007}
   m_Layer: 3
   m_Name: MainCam
   m_TagString: MainCamera
@@ -281,6 +281,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   allAudios: {fileID: 11400000, guid: 05f3175916007ce849d5fee045c8a76d, type: 2}
   musicTransitionDuration: 1
+--- !u!114 &1494500686113831007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5662047847214701983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76a8f370ed4e22e99b9f27dfe456b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Parallax
+  backgrounds:
+  - {fileID: 5691496373713440646}
+  - {fileID: 1240613763558169347}
+  - {fileID: 4133470473683810431}
+  parallaxScales:
+  - 1
+  - 3
+  - 9
+  smoothing: 1
 --- !u!20 &345434361929669659
 Camera:
   m_ObjectHideFlags: 0
@@ -390,27 +411,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
---- !u!114 &1494500686113831007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5662047847214701983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c76a8f370ed4e22e99b9f27dfe456b77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  backgrounds:
-  - {fileID: 5691496373713440646}
-  - {fileID: 1240613763558169347}
-  - {fileID: 4133470473683810431}
-  parallaxScales:
-  - 1
-  - 2
-  - 3
-  smoothing: 1
 --- !u!1 &5691496373713440646
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +438,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7186925722832223349}
@@ -492,8 +492,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: f0c70b5d980ed8ac69294c71956c8a9b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.33333334}
+  m_Sprite: {fileID: 21300000, guid: 56d873bbdf835196ba3940dc27471da7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
