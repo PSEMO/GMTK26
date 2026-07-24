@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSO
   camWeight: 1
   speed: 8
-  jumpForce: 14
+  jumpForce: 20
   maxJumpCount: 1
   jumpBuffer: 0.16
   coyoteJump: 0.16
