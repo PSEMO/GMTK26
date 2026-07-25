@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSO
   camWeight: 1
-  speed: 8
+  speed: 12
   jumpForce: 20
   maxJumpCount: 1
   jumpBuffer: 0.16
@@ -23,7 +23,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1152
   dashForce: 40
-  dashDuration: 0.12
+  dashDuration: 0.2
   wallCheckDistance: 0.2
   wallLayer:
     serializedVersion: 2

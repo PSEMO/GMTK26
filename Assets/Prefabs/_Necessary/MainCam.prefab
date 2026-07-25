@@ -299,8 +299,8 @@ MonoBehaviour:
   - {fileID: 4133470473683810431}
   parallaxScales:
   - 1
-  - 3
-  - 9
+  - 6
+  - 18
   smoothing: 1
 --- !u!20 &345434361929669659
 Camera:
