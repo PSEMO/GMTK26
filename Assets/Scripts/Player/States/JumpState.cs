@@ -10,7 +10,7 @@ namespace PSEMO.Player
 
         public override void OnEnter(IState previousState)
         {
-            //animator.Play(JumpAnimHash);
+            animator.Play(JumpAnimHash);
             
             //AudioManager.Instance.PlayAudio(AudioConstants.Jump);
         

@@ -13,7 +13,7 @@ namespace PSEMO.Player
 
         public override void OnEnter(IState previousState)
         {
-            //animator.Play(DashAnimHash);
+            animator.Play(DashAnimHash);
         
             ctx.canDash = false;
             ctx.DashInput = false;
