@@ -4,7 +4,7 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
     [SerializeField] List<GameObject> backgrounds;
-    [SerializeField] private float[] parallaxScales;
+    [SerializeField] private Vector3[] parallaxScales;
     [SerializeField] private float smoothing = 1f;
     
     private Vector3 previousCamPos;
@@ -20,8 +20,8 @@ public class Parallax : MonoBehaviour
         {
             if (backgrounds[i] == null) continue;
 
-            float parallaxX = (previousCamPos.x - transform.position.x) * parallaxScales[i];
-            float parallaxY = (previousCamPos.y - transform.position.y) * parallaxScales[i];
+            float parallaxX = (previousCamPos.x - transform.position.x) * parallaxScales[i].x;
+            float parallaxY = (previousCamPos.y - transform.position.y) * parallaxScales[i].y;
 
             Vector3 targetPos = new Vector3(
                 backgrounds[i].transform.position.x + parallaxX,
