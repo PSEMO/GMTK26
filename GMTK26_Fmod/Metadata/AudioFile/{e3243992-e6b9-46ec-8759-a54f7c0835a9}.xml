@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e3243992-e6b9-46ec-8759-a54f7c0835a9}">
+		<property name="color">
+			<value>Red</value>
+		</property>
+		<property name="assetPath">
+			<value>SFX/SFX_Countdown_Beep.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.26666666666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f169ca6c-b059-450b-9732-81281ac2acb4}</destination>
+		</relationship>
+	</object>
+</objects>
