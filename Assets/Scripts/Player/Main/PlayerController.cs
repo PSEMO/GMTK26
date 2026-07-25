@@ -5,14 +5,15 @@ using PSEMO.Core.Persistence;
 
 namespace PSEMO.Player
 {
-    [RequireComponent(typeof(Rigidbody), typeof(Animator), typeof(Collider))]
+    [RequireComponent(typeof(Rigidbody), typeof(Collider))]
     public class PlayerController : MonoBehaviour, IStateMachineUser, IPersistable
     {
         public PlayerSO data;
 
+        public Animator animator;
+
         [HideInInspector] public Rigidbody rb;
         [HideInInspector] public Collider col;
-        [HideInInspector] public Animator animator;
 
         private PlayerInputHandler inputHandler;
         private PlayerSurfaceDetector surfaceDetector;
@@ -51,7 +52,6 @@ namespace PSEMO.Player
 
         void Awake()
         {
-            animator = GetComponent<Animator>();
             rb = GetComponent<Rigidbody>();
             col = GetComponent<Collider>();
 
@@ -158,7 +158,7 @@ namespace PSEMO.Player
                 transform.forward = facingDirection;
             }
             
-            //animator.SetFloat(RunSpeedHash, targetSpeed / data.speed);
+            animator.SetFloat(RunSpeedHash, targetSpeed / data.speed);
         }
 
         private void Die()
