@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 94a1f50c58dbd0a37a334e789cbcee47
+guid: 568b702af2f684215b4d651de2b52b2f
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -34,8 +34,8 @@ ModelImporter:
       name: Take 001
       takeName: Take 001
       internalID: 1827226128182048838
-      firstFrame: 0
-      lastFrame: 14
+      firstFrame: 11
+      lastFrame: 28
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -55,8 +55,15 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.054545455
-        functionName: PlayDash
+      - time: 0.3317101
+        functionName: PlayFootstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6636363
+        functionName: PlayFootstep
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
