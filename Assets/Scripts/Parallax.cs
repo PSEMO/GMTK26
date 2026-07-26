@@ -11,7 +11,6 @@ public class Parallax : MonoBehaviour
     [SerializeField] List<GameObject> backgroundsMiddle;
     [SerializeField] List<GameObject> backgroundsRight;
     [SerializeField] private Vector3[] parallaxScales;
-    [SerializeField] private float smoothing = 1f;
     
     private Vector3 previousCamPos;
     private float[] widths;
