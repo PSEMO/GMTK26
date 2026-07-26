@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: d1c61f1b6fa04de71b7be769d78e8c93
+guid: 93a76aa957b07186881c9212704fea1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8640217408077544655
-    second: Bg_SwapPlat_Lay1_1_0
-  - first:
-      213: -3703726401438258407
-    second: Bg_SwapPlat_Lay1_1_1
+      213: 544114086158696505
+    second: Bg_Malfuneq_Lay0_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bg_SwapPlat_Lay1_1_0
+      name: Bg_Malfuneq_Lay0_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1577
-        height: 743
+        width: 3075
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,30 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fccbb9e64f738e770800000000000000
-      internalID: 8640217408077544655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bg_SwapPlat_Lay1_1_1
-      rect:
-        serializedVersion: 2
-        x: 2591
-        y: 0
-        width: 1586
-        height: 810
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91b69090678b99cc0800000000000000
-      internalID: -3703726401438258407
+      spriteID: 93086c6e0e41d8700800000000000000
+      internalID: 544114086158696505
       vertices: []
       indices: 
       edges: []
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bg_SwapPlat_Lay1_1_0: 8640217408077544655
-      Bg_SwapPlat_Lay1_1_1: -3703726401438258407
+      Bg_Malfuneq_Lay0_1_0: 544114086158696505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

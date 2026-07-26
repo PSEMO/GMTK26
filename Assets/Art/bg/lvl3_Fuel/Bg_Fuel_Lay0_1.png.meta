@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 8a66f58ba132121ce926a4728d326d02
+guid: c9eee2e3b02b90a1589598d47d130b53
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8535050222837632926
-    second: Bg_Malfuneq_Lay3_1_0
-  - first:
-      213: 9215042201874820757
-    second: Bg_Malfuneq_Lay3_1_1
+      213: -3797935584283177944
+    second: Bg_Fuel_Lay0_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,35 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bg_Malfuneq_Lay3_1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1413
-        width: 3840
-        height: 747
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9f0b5005f6927670800000000000000
-      internalID: 8535050222837632926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bg_Malfuneq_Lay3_1_1
+      name: Bg_Fuel_Lay0_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 3840
-        height: 670
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59e6bf82f0862ef70800000000000000
-      internalID: 9215042201874820757
+      spriteID: 82c4cfa55b50b4bc0800000000000000
+      internalID: -3797935584283177944
       vertices: []
       indices: 
       edges: []
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bg_Malfuneq_Lay3_1_0: 8535050222837632926
-      Bg_Malfuneq_Lay3_1_1: 9215042201874820757
+      Bg_Fuel_Lay0_1_0: -3797935584283177944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

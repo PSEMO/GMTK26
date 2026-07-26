@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 09bfd39c36f15fe5aa14c2e1691ee6c4
+guid: 17e18a8e6c771a659b6b022c54038c64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6035436516534278707
-    second: Bg_SwapPlat_LayBG_1_0
+      213: 4073874614760687502
+    second: Bg_Malfuneq_Lay2_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,12 +126,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bg_SwapPlat_LayBG_1_0
+      name: Bg_Malfuneq_Lay2_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3848
+        width: 1597
         height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc5ad8f1772dd3ca0800000000000000
-      internalID: -6035436516534278707
+      spriteID: e87ca48b06f498830800000000000000
+      internalID: 4073874614760687502
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bg_SwapPlat_LayBG_1_0: -6035436516534278707
+      Bg_Malfuneq_Lay2_1_0: 4073874614760687502
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

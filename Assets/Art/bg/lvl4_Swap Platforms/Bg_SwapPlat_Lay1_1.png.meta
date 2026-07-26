@@ -1,28 +1,13 @@
 fileFormatVersion: 2
-guid: ddaf3630df3ce3dd4902a9ebafcbf60c
+guid: e5f64fdea76f8cceaa65d60858088fbc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -199013964715472981
-    second: Bg_SwapPlat_Lay2_1_0
+      213: 8640217408077544655
+    second: Bg_SwapPlat_Lay1_1_0
   - first:
-      213: -3119899261470776778
-    second: Bg_SwapPlat_Lay2_1_1
-  - first:
-      213: -8101296066652664878
-    second: Bg_SwapPlat_Lay2_1_2
-  - first:
-      213: -2731221586574623729
-    second: Bg_SwapPlat_Lay2_1_3
-  - first:
-      213: -1391192348741141546
-    second: Bg_SwapPlat_Lay2_1_4
-  - first:
-      213: 722912750661348428
-    second: Bg_SwapPlat_Lay2_1_5
-  - first:
-      213: -145203700616137195
-    second: Bg_SwapPlat_Lay2_1_6
+      213: -3703726401438258407
+    second: Bg_SwapPlat_Lay1_1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bg_SwapPlat_Lay2_1_0
+      name: Bg_SwapPlat_Lay1_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1496
-        height: 2160
+        width: 1577
+        height: 743
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,108 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba7cacf7ad5fc3df0800000000000000
-      internalID: -199013964715472981
+      spriteID: fccbb9e64f738e770800000000000000
+      internalID: 8640217408077544655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bg_SwapPlat_Lay2_1_1
+      name: Bg_SwapPlat_Lay1_1_1
       rect:
         serializedVersion: 2
-        x: 2274
-        y: 1745
-        width: 737
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 632e701d624e3b4d0800000000000000
-      internalID: -3119899261470776778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bg_SwapPlat_Lay2_1_2
-      rect:
-        serializedVersion: 2
-        x: 3002
-        y: 1842
-        width: 838
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2db06ee562a629f80800000000000000
-      internalID: -8101296066652664878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bg_SwapPlat_Lay2_1_3
-      rect:
-        serializedVersion: 2
-        x: 3010
-        y: 1716
-        width: 38
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f0c37590070c81ad0800000000000000
-      internalID: -2731221586574623729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bg_SwapPlat_Lay2_1_4
-      rect:
-        serializedVersion: 2
-        x: 878
-        y: 1153
-        width: 48
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6dbfa0ffded71bce0800000000000000
-      internalID: -1391192348741141546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bg_SwapPlat_Lay2_1_5
-      rect:
-        serializedVersion: 2
-        x: 2610
+        x: 2591
         y: 0
-        width: 1230
-        height: 1171
+        width: 1586
+        height: 810
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,30 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4c25ca015d480a00800000000000000
-      internalID: 722912750661348428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bg_SwapPlat_Lay2_1_6
-      rect:
-        serializedVersion: 2
-        x: 898
-        y: 1145
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 516f3bce0022cfdf0800000000000000
-      internalID: -145203700616137195
+      spriteID: 91b69090678b99cc0800000000000000
+      internalID: -3703726401438258407
       vertices: []
       indices: 
       edges: []
@@ -311,13 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bg_SwapPlat_Lay2_1_0: -199013964715472981
-      Bg_SwapPlat_Lay2_1_1: -3119899261470776778
-      Bg_SwapPlat_Lay2_1_2: -8101296066652664878
-      Bg_SwapPlat_Lay2_1_3: -2731221586574623729
-      Bg_SwapPlat_Lay2_1_4: -1391192348741141546
-      Bg_SwapPlat_Lay2_1_5: 722912750661348428
-      Bg_SwapPlat_Lay2_1_6: -145203700616137195
+      Bg_SwapPlat_Lay1_1_0: 8640217408077544655
+      Bg_SwapPlat_Lay1_1_1: -3703726401438258407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

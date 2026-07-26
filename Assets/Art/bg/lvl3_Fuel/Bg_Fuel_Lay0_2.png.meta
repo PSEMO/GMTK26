@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 025e646df42e8f80da89584c7dcef705
+guid: 3f363ac768f1d6b2f9c2d2c248e97a89
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5304527300587625159
-    second: Bg_SwapPlat_Lay0_1_0
+      213: 7886131077353705968
+    second: Bg_Fuel_Lay0_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bg_SwapPlat_Lay0_1_0
+      name: Bg_Fuel_Lay0_2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ca13eca9777d9940800000000000000
-      internalID: 5304527300587625159
+      spriteID: 0f116ddae6a217d60800000000000000
+      internalID: 7886131077353705968
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bg_SwapPlat_Lay0_1_0: 5304527300587625159
+      Bg_Fuel_Lay0_2_0: 7886131077353705968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
