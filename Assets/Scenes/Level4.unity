@@ -713,6 +713,77 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da7e59d908877f4b2aad18454688c7f8, type: 3}
+--- !u!1 &330685924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 330685926}
+  - component: {fileID: 330685925}
+  - component: {fileID: 330685927}
+  m_Layer: 0
+  m_Name: AUDIO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &330685925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330685924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6db9a20095b9b54cbfa906625ff0aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CS_LVLMusic
+  musicEvent:
+    Guid:
+      Data1: -1378041601
+      Data2: 1305648285
+      Data3: 55882390
+      Data4: 1421107861
+    Path: event:/MUSIC/MUS_LVL_04
+--- !u!4 &330685926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330685924}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.74777, y: -3.24867, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &330685927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330685924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240af6ce852baea42a8f142484a12351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CS_AmbianceManager
+  ambienceEvent:
+    Guid:
+      Data1: -1650355007
+      Data2: 1339499518
+      Data3: -394916729
+      Data4: 878711942
+    Path: event:/AMB/PAD_Main
 --- !u!1001 &381820986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4697,3 +4768,4 @@ SceneRoots:
   - {fileID: 1788574394}
   - {fileID: 1159839401}
   - {fileID: 482316732}
+  - {fileID: 330685926}

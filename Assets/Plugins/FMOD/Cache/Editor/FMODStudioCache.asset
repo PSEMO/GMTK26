@@ -27,6 +27,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-7729524836276169494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Hover
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/UI/UI_Hover
+  Guid:
+    Data1: -1867800261
+    Data2: 1333724724
+    Data3: 810946445
+    Data4: 286565311
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7224738203047348133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUS_LVL_05
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MUSIC/MUS_LVL_05
+  Guid:
+    Data1: 230211618
+    Data2: 1163431632
+    Data3: -636525431
+    Data4: -1591012877
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 86000
 --- !u!114 &-7140724976973619718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 52566
+--- !u!114 &-6579643574180853334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Click
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/UI/UI_Click
+  Guid:
+    Data1: 84081448
+    Data2: 1299925036
+    Data3: -1982929239
+    Data4: -962339914
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2523620855391718296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +216,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-237266261511706871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUS_LVL_07
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MUSIC/MUS_LVL_07
+  Guid:
+    Data1: -1845230278
+    Data2: 1255207442
+    Data3: -1127732070
+    Data4: 677098917
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 75428
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +269,15 @@ MonoBehaviour:
   - {fileID: 8361503120520499039}
   - {fileID: -8964182202872881994}
   - {fileID: 4843220130864140107}
+  - {fileID: -7224738203047348133}
+  - {fileID: 8307005428208845164}
+  - {fileID: -237266261511706871}
+  - {fileID: 2949424925867628974}
+  - {fileID: 6749191748772213451}
+  - {fileID: 2040160252661952858}
+  - {fileID: 7406191673861650268}
+  - {fileID: -6579643574180853334}
+  - {fileID: -7729524836276169494}
   EditorParameters:
   - {fileID: 2351368966114583404}
   MasterBanks:
@@ -168,7 +285,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 4111326497453596751}
   cacheVersion: 131860
-  cacheTime: 639205869484296587
+  cacheTime: 639206792115014724
   SerializableEventsDict:
   - key: event:/MC/MC_Land_Metal
     index: 0
@@ -190,6 +307,24 @@ MonoBehaviour:
     index: 8
   - key: event:/SFX/SFX_Countdown_Beep
     index: 9
+  - key: event:/MUSIC/MUS_LVL_05
+    index: 10
+  - key: event:/MUSIC/MUS_LVL_01
+    index: 11
+  - key: event:/MUSIC/MUS_LVL_07
+    index: 12
+  - key: event:/MUSIC/MUS_LVL_06
+    index: 13
+  - key: event:/MUSIC/MUS_LVL_03
+    index: 14
+  - key: event:/MUSIC/MUS_LVL_02
+    index: 15
+  - key: event:/MUSIC/MUS_LVL_04
+    index: 16
+  - key: event:/UI/UI_Click
+    index: 17
+  - key: event:/UI/UI_Hover
+    index: 18
 --- !u!114 &40837801981270752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +349,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &2040160252661952858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUS_LVL_02
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MUSIC/MUS_LVL_02
+  Guid:
+    Data1: 1140297133
+    Data2: 1253258672
+    Data3: 1800185499
+    Data4: 1516418715
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 120000
 --- !u!114 &2133928997493378664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,11 +442,38 @@ MonoBehaviour:
   Path: GMTK26_Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639205869484256909
+  lastModified: 639206792114965135
   FileSizes:
   - Name: Desktop
-    Value: 941088
+    Value: 9065056
   Exists: 1
+--- !u!114 &2949424925867628974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUS_LVL_06
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MUSIC/MUS_LVL_06
+  Guid:
+    Data1: -576947317
+    Data2: 1300634668
+    Data3: -817601393
+    Data4: -502448477
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 86400
 --- !u!114 &4111326497453596751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,10 +489,10 @@ MonoBehaviour:
   Path: GMTK26_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639205869484296587
+  lastModified: 639206792115014724
   FileSizes:
   - Name: Desktop
-    Value: 1400
+    Value: 1752
   Exists: 1
 --- !u!114 &4555051335708976927
 MonoBehaviour:
@@ -360,6 +549,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6749191748772213451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUS_LVL_03
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MUSIC/MUS_LVL_03
+  Guid:
+    Data1: 1030239888
+    Data2: 1143853182
+    Data3: -337236345
+    Data4: 846050695
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 89600
+--- !u!114 &7406191673861650268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUS_LVL_04
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MUSIC/MUS_LVL_04
+  Guid:
+    Data1: -1378041601
+    Data2: 1305648285
+    Data3: 55882390
+    Data4: 1421107861
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 110000
+--- !u!114 &8307005428208845164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUS_LVL_01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MUSIC/MUS_LVL_01
+  Guid:
+    Data1: 1032311333
+    Data2: 1226059064
+    Data3: -1432805196
+    Data4: -1502519431
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 75428
 --- !u!114 &8361503120520499039
 MonoBehaviour:
   m_ObjectHideFlags: 0

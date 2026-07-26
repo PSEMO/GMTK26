@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{836013a4-7245-4e17-9c28-8aea44f1ceaa}">
+		<property name="assetPath">
+			<value>MUSIC/MUS_Fuel_LVL.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>89.599999999999994</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f169ca6c-b059-450b-9732-81281ac2acb4}</destination>
+		</relationship>
+	</object>
+</objects>

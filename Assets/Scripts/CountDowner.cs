@@ -10,11 +10,13 @@ public class CountDowner : MonoBehaviour
 
     bool currentUpState;
     float maxTimer;
+    int lastSecond; // pour détecter le changement de seconde
 
     void Start()
     {
         maxTimer = timer;
         currentUpState = initialUpState;
+        lastSecond = Mathf.CeilToInt(timer);
 
         CountdownEvent.InvokeOnCountDown(currentUpState);
     }
@@ -23,10 +25,19 @@ public class CountDowner : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
+        // Détection du passage à la seconde inférieure → beep
+        int currentSecond = Mathf.CeilToInt(timer);
+        if (currentSecond < lastSecond && currentSecond > 0)
+        {
+            lastSecond = currentSecond;
+            CountdownEvent.InvokeOnCountDownBeep(); // nouveau event
+        }
+
         if (timer < 0)
         {
             currentUpState = !currentUpState;
             timer += maxTimer;
+            lastSecond = Mathf.CeilToInt(timer);
 
             CountdownEvent.InvokeOnCountDown(currentUpState);
         }

@@ -251,6 +251,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5217ec8d0d7961e4ebd2f34434903bb6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4624092445460369605}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5217ec8d0d7961e4ebd2f34434903bb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3496413338668394849}
   m_SourcePrefab: {fileID: 100100000, guid: 5217ec8d0d7961e4ebd2f34434903bb6, type: 3}
 --- !u!1 &5918039624144806999 stripped
 GameObject:
@@ -279,6 +282,46 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3496413338668394849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5918039624144806999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831924b871b9b324386cc00582f27532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAudio
+  jumpEvent:
+    Guid:
+      Data1: -325204838
+      Data2: 1170091287
+      Data3: -346116425
+      Data4: 1308596429
+    Path: event:/MC/MC_Jump_Metal
+  dashEvent:
+    Guid:
+      Data1: -147161425
+      Data2: 1093786584
+      Data3: -1913709939
+      Data4: 353460528
+    Path: event:/MC/MC_Dash
+  footstepEvent:
+    Guid:
+      Data1: -1017460028
+      Data2: 1199840924
+      Data3: -1703066983
+      Data4: 1242493356
+    Path: event:/MC/MC_Walk_Metal
+  landEvent:
+    Guid:
+      Data1: -683318464
+      Data2: 1154501582
+      Data3: -663125825
+      Data4: 2105426970
+    Path: event:/MC/MC_Land_Metal
 --- !u!4 &6443183228431253229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5217ec8d0d7961e4ebd2f34434903bb6, type: 3}

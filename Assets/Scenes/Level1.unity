@@ -2530,6 +2530,91 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5fa30c2961bab3be9a34fd66f2698fa, type: 3}
+--- !u!1 &1170883603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1170883605}
+  - component: {fileID: 1170883604}
+  - component: {fileID: 1170883606}
+  m_Layer: 0
+  m_Name: AUDIO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1170883604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170883603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240af6ce852baea42a8f142484a12351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CS_AmbianceManager
+  ambienceEvent:
+    Guid:
+      Data1: -1650355007
+      Data2: 1339499518
+      Data3: -394916729
+      Data4: 878711942
+    Path: event:/AMB/PAD_Main
+  countdownEndEvent:
+    Guid:
+      Data1: -19092069
+      Data2: 1131094156
+      Data3: -35822960
+      Data4: -788075895
+    Path: event:/SFX/SFX_Countdown
+  countdownBeepEvent:
+    Guid:
+      Data1: 1931826922
+      Data2: 1220547377
+      Data3: -1220902729
+      Data4: 1160854963
+    Path: event:/SFX/SFX_Countdown_Beep
+--- !u!4 &1170883605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170883603}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.74777, y: -3.24867, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170883606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170883603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6db9a20095b9b54cbfa906625ff0aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CS_LVLMusic
+  musicEvent:
+    Guid:
+      Data1: 1032311333
+      Data2: 1226059064
+      Data3: -1432805196
+      Data4: -1502519431
+    Path: event:/MUSIC/MUS_LVL_01
 --- !u!1001 &1188741219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5395,3 +5480,4 @@ SceneRoots:
   - {fileID: 575717560}
   - {fileID: 838115150}
   - {fileID: 976878261}
+  - {fileID: 1170883605}
