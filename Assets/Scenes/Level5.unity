@@ -4981,46 +4981,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 345434361929669659, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: orthographic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 345434361929669659, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: field of view
-      value: 95
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494500686113831007, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: parallaxScales.Array.data[0].y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494500686113831007, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: parallaxScales.Array.data[0].z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494500686113831007, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: parallaxScales.Array.data[1].x
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494500686113831007, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: parallaxScales.Array.data[1].y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494500686113831007, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: parallaxScales.Array.data[1].z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494500686113831007, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: parallaxScales.Array.data[2].x
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494500686113831007, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: parallaxScales.Array.data[2].y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494500686113831007, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
-      propertyPath: parallaxScales.Array.data[2].z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2743190618378286413, guid: 79eafcb55e91f60dba0ae22ac33c3d59, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

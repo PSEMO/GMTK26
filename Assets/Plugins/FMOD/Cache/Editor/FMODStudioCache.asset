@@ -27,6 +27,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-8041562264816636519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MC/MC_Jump_Metal
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MC/MC_Jump_Metal
+  Guid:
+    Data1: -325204838
+    Data2: 1170091287
+    Data3: -346116425
+    Data4: 1308596429
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7889544412813592636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MC/MC_Land_Metal
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MC/MC_Land_Metal
+  Guid:
+    Data1: -683318464
+    Data2: 1154501582
+    Data3: -663125825
+    Data4: 2105426970
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7683799952729279356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/AMB_RFX_Spark
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/AMB/AMB_RFX_Spark
+  Guid:
+    Data1: -1519360660
+    Data2: 1285282361
+    Data3: 497962937
+    Data4: -1662231029
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-7140724976973619718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +135,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 52566
+--- !u!114 &-7001411634399978938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BeepCountdown
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: BeepCountdown
+  StudioPath: parameter:/BeepCountdown
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 3860984406
+    data2: 2220780337
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-2523620855391718296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +177,33 @@ MonoBehaviour:
     Data2: 1131094156
     Data3: -35822960
     Data4: -788075895
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2111154705804245398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MC/MC_Dash
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MC/MC_Dash
+  Guid:
+    Data1: -147161425
+    Data2: 1093786584
+    Data3: -1913709939
+    Data4: 353460528
   Banks:
   - {fileID: 2554745637947853539}
   IsStream: 0
@@ -108,6 +240,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-826044583490700458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Countdown
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Countdown
+  Guid:
+    Data1: -19092069
+    Data2: 1131094156
+    Data3: -35822960
+    Data4: -788075895
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-770999803895271225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +294,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-682953378410243534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/AMB_RFX_Glitch
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/AMB/AMB_RFX_Glitch
+  Guid:
+    Data1: -1747495256
+    Data2: 1185853572
+    Data3: 665024438
+    Data4: -419847877
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-608395411011454587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/PAD_Main
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/AMB/PAD_Main
+  Guid:
+    Data1: -1650355007
+    Data2: 1339499518
+    Data3: -394916729
+    Data4: 878711942
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 52566
+--- !u!114 &-449729216301872749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/AMB_RFX_Hiss
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/AMB/AMB_RFX_Hiss
+  Guid:
+    Data1: 705747933
+    Data2: 1337068341
+    Data3: 728580772
+    Data4: -1993880757
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,24 +391,24 @@ MonoBehaviour:
   - {fileID: 4111326497453596751}
   - {fileID: 2554745637947853539}
   EditorEvents:
-  - {fileID: 2133928997493378664}
-  - {fileID: 8837396565692588721}
-  - {fileID: -770999803895271225}
-  - {fileID: -2523620855391718296}
-  - {fileID: -1396331998912668365}
-  - {fileID: 4555051335708976927}
-  - {fileID: -7140724976973619718}
-  - {fileID: 8361503120520499039}
-  - {fileID: -8964182202872881994}
-  - {fileID: 4843220130864140107}
+  - {fileID: -7889544412813592636}
+  - {fileID: -7683799952729279356}
+  - {fileID: -8041562264816636519}
+  - {fileID: -826044583490700458}
+  - {fileID: -682953378410243534}
+  - {fileID: -2111154705804245398}
+  - {fileID: -608395411011454587}
+  - {fileID: 5445445245000551260}
+  - {fileID: -449729216301872749}
+  - {fileID: 8824834739004686282}
   EditorParameters:
-  - {fileID: 2351368966114583404}
+  - {fileID: -7001411634399978938}
   MasterBanks:
   - {fileID: 2554745637947853539}
   StringsBanks:
   - {fileID: 4111326497453596751}
   cacheVersion: 131860
-  cacheTime: 639205869484296587
+  cacheTime: 639206708312185360
   SerializableEventsDict:
   - key: event:/MC/MC_Land_Metal
     index: 0
@@ -280,7 +520,7 @@ MonoBehaviour:
   Path: GMTK26_Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639205869484256909
+  lastModified: 639206708312185360
   FileSizes:
   - Name: Desktop
     Value: 941088
@@ -300,7 +540,7 @@ MonoBehaviour:
   Path: GMTK26_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639205869484296587
+  lastModified: 639206708312185360
   FileSizes:
   - Name: Desktop
     Value: 1400
@@ -360,6 +600,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5445445245000551260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MC/MC_Walk_Metal
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MC/MC_Walk_Metal
+  Guid:
+    Data1: -1017460028
+    Data2: 1199840924
+    Data3: -1703066983
+    Data4: 1242493356
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &8361503120520499039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +654,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &8824834739004686282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Countdown_Beep
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Countdown_Beep
+  Guid:
+    Data1: 1931826922
+    Data2: 1220547377
+    Data3: -1220902729
+    Data4: 1160854963
+  Banks:
+  - {fileID: 2554745637947853539}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 9065514654070208705}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8837396565692588721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,3 +709,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &9065514654070208705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_Countdown_Beep/BeepCountdown
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: BeepCountdown
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 3860984406
+    data2: 2220780337
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
